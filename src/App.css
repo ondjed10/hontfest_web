@@ -10,6 +10,20 @@
   color: #EF7506;
 }
 
+.lineup {
+  background-color: #fff;
+  color: #EF7506;
+  height: 300px;
+  line-height: 300px;
+  align-content: center;
+  vertical-align: middle;
+}
+
+.band {
+  display: inline-block;
+  vertical-align: middle; 
+  font-size: xx-large;
+}
 
 ul {
   display: flex;
@@ -105,4 +119,14 @@ li:hover {
 
 body {
   background-color: #EF7506;
+}
+
+/* animations */
+@keyframes rollout {
+  0% { transform: translateY(-100px); }
+  100% { transform: none; }
+}
+
+.roll-out {
+  animation: rollout 1.2s;
 }

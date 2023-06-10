@@ -16,7 +16,7 @@ export const Countdown = () => {
         let minutes = Math.floor((timeLeft % hour) / minute)
         let seconds = Math.floor((timeLeft % minute) / second)
 
-        return seconds >= 10 ?`${days} dní, ${hours}:${minutes}:${seconds}` : `${days} dní, ${hours}:${minutes}:0${seconds}`
+        return `${days} dní, ${hours >= 10 ? hours : '0'+hours}:${minutes >= 10 ? minutes : '0'+minutes}:${seconds >= 10 ? seconds : '0'+seconds}`
     }
 
     let [now, setNow] = useState(new Date())
