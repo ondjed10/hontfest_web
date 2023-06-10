@@ -5,6 +5,12 @@
   font-family: 'Lato', sans-serif;
 }
 
+.countdown {
+  background-color: #fff;
+  color: #EF7506;
+}
+
+
 ul {
   display: flex;
   gap: 1rem;
