@@ -5,6 +5,7 @@ import About from "./Content/About.js";
 import { Countdown } from "./Content/Countdown";
 import { LineUp } from "./Content/LineUp";
 
+
 function Content(){
     return (
         <div className="content_container">

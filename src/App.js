@@ -1,19 +1,25 @@
 import './App.css';
 import Navbar from './Navbar';
 import Content from './Content';
+import { Footer } from './Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="nav">
+      <div>
+        <header className="nav">
         <Navbar></Navbar>
-      </header>
-      <div className='intro'>
-        <h1>Hontfest 2023</h1>
+        </header>
+        <div className='intro'>
+          <h1>Hontfest 2023</h1>
+        </div>
+        
+        <Content/>
       </div>
       
-      <Content/>
+      <Footer/>
     </div>
+    
   );
 }
 
