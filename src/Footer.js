@@ -1,5 +1,5 @@
 import React from "react";
-
+import { SocialIcon } from 'react-social-icons'
 
 export const Footer = () => {
     return (
@@ -12,9 +12,18 @@ export const Footer = () => {
                     </div> 
                     <div className="footer-column">
                         <p className="footer-heading">Sledujte nás aj na sociálnych sieťach</p>
-                        <a className="footer-link" href="https://www.facebook.com/HONTfestNavrat">Facebook</a>
-                        <a className="footer-link" href="https://www.youtube.com/@spolocenstvosion8512">YouTube</a>
-                        <a className="footer-link" href="https://www.instagram.com/hontfest/">Instagram</a>
+                        
+                        <ul>
+                            <li>
+                                <SocialIcon url="https://www.facebook.com/HONTfestNavrat"  /> 
+                            </li>
+                            <li>
+                                <SocialIcon url="https://www.youtube.com/@spolocenstvosion8512"/>
+                            </li>
+                            <li>
+                                <SocialIcon url="https://www.instagram.com/hontfest/"/>
+                            </li>
+                        </ul>       
                     </div> 
                 </div>           
             </div>
