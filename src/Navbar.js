@@ -4,7 +4,7 @@ import { Link } from "react-scroll"
 function Navbar(){
     return (
         <nav className="navbar__actions">
-            <ul>
+            <ul style={{float: 'left'}}>
                 <li>
                     <Link activeClass="active" smooth spy to='about'>
                         o nás
@@ -33,6 +33,7 @@ function Navbar(){
                     </Link>
                 </li>
             </ul>
+            {/* <h2 style={{float: 'inline-end', paddingLeft: 50, paddingBottom: -20}}>Hontfest 2023</h2> */}
         </nav>
     )
 }
