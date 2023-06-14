@@ -1,27 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap');
+
 
 .App {
   text-align: center;
-  font-family: 'Martel Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
   background-image: url('../src/images/pozadie.jpg');
   background-attachment: fixed;
+  margin-top: 15px;
+}
+
+.home {
+  margin-top: 30vh;
+}
+
+.countDown {
+  line-height: 100px;
+  font-weight: 700;
+  font-size: 75px;
+  letter-spacing: 7px;
 }
 
 .countdown {
-  background-image: url('../src/images/obdklznik.png');
+  background-image: url('../src/images/2.png');
   background-position: center;
   color: #fff;
   height: 100px;
   margin: auto;
+  border-radius: 30px;
+  justify-content: center;
 }
 html, body {
   margin: 0;
   padding: 0;
 }
 
+.content {
+  background-image: url('../src/images/2.png');
+  background-size: 100%;
+  /* background-attachment: fixed; */
+  border-radius: 25px;
+  padding: 0.25cm;
+}
+
 .lineup {
-  background-image: url('../src/images/obdklznik.png');
+  background-image: url('../src/images/2.png');
   background-position: center;
+  border-radius: 30px;
   /* background-size: ; */
   color: #fff;
   height: 200px;
@@ -29,6 +54,23 @@ html, body {
   align-content: center;
   vertical-align: middle;
   margin: auto;
+  font-weight: 900;
+}
+
+.Q, .A {
+  text-align: left;
+}
+
+#faq {
+  height: fit-content;
+}
+
+.faq {
+  background-image: url('../src/images/2.png');
+  background-size: 100%;
+  /* background-attachment: fixed; */
+  border-radius: 25px;
+  padding: 0.25cm;
 }
 
 .band {
@@ -48,6 +90,7 @@ ul {
 
 .content_container {
   padding: 1cm;
+  margin-top: -100px;
 }
 
 .nav {
@@ -77,18 +120,15 @@ ul {
 }
 
 .navbar__actions {
-  display: inline-flex;
+  display: inline-block;
   flex-flow: row nowrap;
   padding-left: 50px;
   flex: 1;
+  vertical-align: middle;
 }
 
 .active {
   font-weight: bold;
-}
-
-#about {
-  margin-top: 100px;
 }
 
 .mapContainer{
@@ -102,7 +142,7 @@ ul {
 }
 
 .column {
-  width: 50%;
+  width: 45%;
   float: left;
 }
 
@@ -110,28 +150,66 @@ ul {
   clear: left;
 }
 
+.column-desc {
+  display: flex;
+  width: 20%;
+  height: 700px;
+  float: left;
+  align-items:center;
+  justify-content:center;
+  text-transform: uppercase;
+  font-size: 100px;
+}
+
+.column-gallery {
+  width: 80%;
+  clear: left;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 section {
-  display: grid;
+  display: block;
   height: 100vh;
   font-size: 32px;
   font-weight: bold;
   place-items: center;
+  margin-top: 25vh;
+}
+
+hr {
+  border: 1px solid black;
 }
 
 li {
   width: fit-content;
   cursor: pointer;
+  height: 30px;
+  line-height: 30px;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 li:hover {
   text-decoration: grey;
 }
 
+#about {
+  height: 150vh;
+}
+
+.gallery{
+  width: 1060px;
+  height: 700px;
+  z-index: 1;
+}
 
 /* animations */
 @keyframes rollout {

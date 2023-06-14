@@ -13,7 +13,9 @@ function Contact(){
 
     return (
         <section id="contact">
-            Kontakty
+            <hr></hr>
+            <h1 style={{fontSize: 100+'px', textTransform: 'uppercase'}}>Kontakty</h1>
+            
             <div className="row">
                 <div className="column">
                     <p>

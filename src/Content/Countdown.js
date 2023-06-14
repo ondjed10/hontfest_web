@@ -16,7 +16,44 @@ export const Countdown = () => {
         let minutes = Math.floor((timeLeft % hour) / minute)
         let seconds = Math.floor((timeLeft % minute) / second)
 
-        return `${days} dní, ${hours >= 10 ? hours : '0'+hours}:${minutes >= 10 ? minutes : '0'+minutes}:${seconds >= 10 ? seconds : '0'+seconds}`
+        let hoursString = ''
+        if (hours === 1){
+            hoursString = 'hodina'
+        }
+        else if (hours >= 1 && hours <= 4){
+            hoursString = 'hodiny'
+        }
+        else {
+            hoursString = 'hodín'
+        }
+
+        let minuteString = ''
+        if (minutes === 1){
+            minuteString = 'minúta'
+        }
+        else if (minutes >= 1 && minutes <= 4){
+            minuteString = 'minúty'
+        }
+        else {
+            minuteString = 'minút'
+        }
+
+        let secondsString = ''
+        if (seconds === 1){
+            secondsString = 'sekunda'
+        }
+        else if (seconds >= 1 && seconds <= 4){
+            secondsString = 'sekundy'
+        }
+        else {
+            secondsString = 'sekúnd'
+        }
+
+
+
+
+
+        return `${days} dní | ${hours >= 10 ? hours : '0'+hours} ${hoursString} | ${minutes >= 10 ? minutes : '0'+minutes} ${minuteString} | ${seconds >= 10 ? seconds : '0'+seconds} ${secondsString}`
     }
 
     let [now, setNow] = useState(new Date())
@@ -37,8 +74,7 @@ export const Countdown = () => {
 
     return (
         <div className="countdown">
-            <h4>Hontfest začína o:</h4>
-            <span>{countdown}</span>
+            <p className="countDown">{countdown}</p>
         </div>
     )
 }

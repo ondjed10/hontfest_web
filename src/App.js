@@ -10,10 +10,6 @@ function App() {
         <header className="nav">
         <Navbar></Navbar>
         </header>
-        <div className='intro'>
-          <h1>Hontfest 2023</h1>
-        </div>
-        
         <Content/>
       </div>
       
