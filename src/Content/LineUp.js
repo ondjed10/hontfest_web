@@ -24,6 +24,14 @@ export const LineUp = () => {
                     <span style={{fontSize: 75+'px', letterSpacing: 7+'px'}}>{bands[index]}</span>
                 </div>        
             </div>
+            <div className="row">
+                <div className="column">
+                    <h3>STAGE</h3>
+                </div>
+                <div className="column">
+                    <h3>SPRIEVODNÉ PODUJATIA</h3>                    
+                </div>
+            </div>
         </div>
         
     )
