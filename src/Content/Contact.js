@@ -18,12 +18,9 @@ function Contact(){
             
             <div className="row">
                 <div className="column">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        In ut interdum risus, in commodo sem. Sed sed porta tellus, 
-                        in consectetur libero. Donec pharetra, tortor eget ultrices blandit, 
-                        ex lectus egestas dui, eu porttitor lectus massa et ipsum. 
-                    </p>
+                        <p>Kontaktná osoba: Dominik Belica</p>
+                        <p>Telefónne číslo: +421904343305</p>
+                        <p>Email: dominik.belica@gmail.com</p>
                 </div>
                 <div className="column">
                     <Map

@@ -247,6 +247,11 @@ li:hover {
   height: 150vh;
 }
 
+#contact {
+  /* height: 50vh; */
+  margin-top: 0;
+}
+
 .gallery{
   width: 1060px;
   height: 700px;

@@ -25,7 +25,7 @@ function Navbar(){
                 </li>
                 <li>
                     <Link activeClass="active" smooth spy to='support'>
-                        pomôžte nám
+                        podporte nás
                     </Link>
                 </li>
                 <li>
