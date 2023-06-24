@@ -89,7 +89,7 @@ html, body {
 
 .A {
   text-align: middle;
-  animation: slideDown ease .4s forwards;
+  animation: slideDown ease 1.2s forwards;
 }
 
 @keyframes slideUp {
