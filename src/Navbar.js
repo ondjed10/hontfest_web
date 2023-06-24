@@ -1,11 +1,15 @@
 import React from "react";
 import { Link } from "react-scroll"
+import { Link as RedirectLink } from "react-router-dom";
 import logo from "./images/logo-transformed.jpeg"
+import { SocialIcon } from 'react-social-icons'
 
 function Navbar(){
     return (
         <nav className="navbar__actions">
-            <img className="logo" src={logo} style={{float: 'left', marginLeft: -50+'px'}}></img>
+            <RedirectLink to='/'>
+                <img className="logo" src={logo} style={{float: 'left', marginLeft: -50+'px'}}></img>
+            </RedirectLink>
             <ul style={{float: 'left', marginLeft: 30+'px'}}>
                 
                 <li>
@@ -20,14 +24,8 @@ function Navbar(){
                     
                 </li>
                 <li>
-                    <Link activeClass="active" smooth spy to='faq'>
-                        faq
-                    </Link>
-                    
-                </li>
-                <li>
-                    <Link activeClass="active" smooth spy to='sponzors'>
-                        sponzori
+                    <Link activeClass="active" smooth spy to='support'>
+                        pomôžte nám
                     </Link>
                 </li>
                 <li>
@@ -35,6 +33,23 @@ function Navbar(){
                         kontakty
                     </Link>
                 </li>
+                <li>
+                    <RedirectLink to="/faq">
+                        faq
+                    </RedirectLink>
+                </li>
+            </ul>
+
+            <ul style={{float: 'right'}}>      
+                <li>
+                    <SocialIcon url="https://www.facebook.com/HONTfestNavrat"  /> 
+                </li>
+                <li>
+                    <SocialIcon url="https://www.youtube.com/@spolocenstvosion8512"/>
+                </li>
+                <li>
+                    <SocialIcon url="https://www.instagram.com/hontfest/"/>
+                </li>             
             </ul>
             {/* <h2 style={{float: 'inline-end', paddingLeft: 50, paddingBottom: -20}}>Hontfest 2023</h2> */}
         </nav>
