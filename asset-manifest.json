@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/hontfest_web/static/css/main.1ca87c6e.css",
+    "main.js": "/hontfest_web/static/js/main.83c471ef.js",
+    "static/js/787.15662f1b.chunk.js": "/hontfest_web/static/js/787.15662f1b.chunk.js",
+    "static/media/pozadie.jpg": "/hontfest_web/static/media/pozadie.dd4f01c2a9d31f5d458d.jpg",
+    "static/media/hf4.jpg": "/hontfest_web/static/media/hf4.5690e65d25171237b7e1.jpg",
+    "static/media/hf3.jpg": "/hontfest_web/static/media/hf3.f88a36bc16a139a99773.jpg",
+    "static/media/hf2.jpg": "/hontfest_web/static/media/hf2.e0d8cd89b3eb0ac78841.jpg",
+    "static/media/2.png": "/hontfest_web/static/media/2.cb77e025b8f0e6cd04c6.png",
+    "static/media/hf1.jpeg": "/hontfest_web/static/media/hf1.2eb0237036e09af83424.jpeg",
+    "static/media/stred.png": "/hontfest_web/static/media/stred.d024c8f30921d7c7f7c6.png",
+    "index.html": "/hontfest_web/index.html",
+    "main.1ca87c6e.css.map": "/hontfest_web/static/css/main.1ca87c6e.css.map",
+    "main.83c471ef.js.map": "/hontfest_web/static/js/main.83c471ef.js.map",
+    "787.15662f1b.chunk.js.map": "/hontfest_web/static/js/787.15662f1b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ca87c6e.css",
+    "static/js/main.83c471ef.js"
+  ]
+}
