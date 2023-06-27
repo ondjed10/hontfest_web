@@ -155,7 +155,7 @@ ul {
 }
 
 .content_container {
-  padding: 1cm;
+  padding: 0.25cm;
   margin-top: -100px;
 }
 
@@ -240,11 +240,11 @@ ul {
 
 section {
   display: block;
-  height: 100vh;
+  height: 100vw;
   font-size: 32px;
   font-weight: bold;
   place-items: center;
-  margin-top: 25vh;
+  margin-top: 25vw;
 }
 
 hr {
