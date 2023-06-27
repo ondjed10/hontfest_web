@@ -33,8 +33,13 @@
   font-size: 10vw;
 }
 
+.sectionName {
+  text-transform: uppercase;
+  font-size: 8vw;
+}
+
 .contactText {
-  font-size: 4.5vw;
+  font-size: 3.5vw;
 }
 
 .countDown {
@@ -77,8 +82,8 @@ html, body {
   border-radius: 25px;
   /* background-size: ; */
   color: #fff;
-  height: 25vw;
-  line-height: 25vw;
+  height: 15vw;
+  line-height: 15vw;
   align-content: center;
   vertical-align: middle;
   margin: auto;
@@ -87,12 +92,15 @@ html, body {
 }
 
 .lineUpName {
-  line-height: 10vw;
+  /* line-height: 10vw; */
   font-weight: 700;
-  font-size: 12vw;
+  font-size: 9vw;
   letter-spacing: 0.7vw;
 }
 
+.program {
+  font-size: 4vw;
+}
 
 .dropdown {
   background-color: transparent;
@@ -198,7 +206,7 @@ ul {
 }
 
 .mapContainer{
-  height: 50vw;
+  height: 25vw;
   width: 100%;
 }
 
@@ -402,10 +410,67 @@ li:hover {
   .infoText {
     font-size: 6vw;
   }
+
+  .contactText {
+    font-size: 4.5vw;
+  }
 }
 
 
 
 .wrap {
   white-space: pre-line;
+}
+
+/* hamburger button css */
+.mobileNav {
+  display: none;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+@media (max-width: 800px) {
+  
+  /* .mobileNav {
+    display: inline-block;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  .logoContainer {
+    display: none;
+  }
+  .navbar { 
+    display: none;
+  } */
 }

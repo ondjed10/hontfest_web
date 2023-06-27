@@ -36,7 +36,7 @@ export const FAQ = () => {
             <div className="home">
                 
                 <div className='intro'>
-                    <h1 className="bigName">Časté otázky</h1>
+                    <h1 className="sectionName">Časté otázky</h1>
                 </div>
             
                 <section id="faq">

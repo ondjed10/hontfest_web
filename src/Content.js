@@ -28,13 +28,13 @@ function Content(){
             <About/>
             <section id='program'>
                 <hr></hr>
-                <h1 className="bigName">program</h1>
+                <h1 className="sectionName">program</h1>
                 <LineUp/> 
             </section>
             {/* <FAQ /> */}
             <section id="support">
                 <hr></hr>
-                <h1 className="bigName">Podporte nás</h1>
+                <h1 className="sectionName">Podporte nás</h1>
             
             </section>
             <Contact/>

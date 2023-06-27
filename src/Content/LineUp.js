@@ -26,10 +26,10 @@ export const LineUp = () => {
             </div>
             <div className="row">
                 <div className="column">
-                    <h3>STAGE</h3>
+                    <h3 className="program">STAGE</h3>
                 </div>
                 <div className="column">
-                    <h3>SPRIEVODNÉ PODUJATIA</h3>                    
+                    <h3 className="program">DISKUSNÝ STAN</h3>                    
                 </div>
             </div>
         </div>

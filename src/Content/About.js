@@ -11,7 +11,7 @@ function About(){
     return (
         <section id="about">
             <hr></hr>
-            <span className="bigName">O nás</span>
+            <span className="sectionName">O nás</span>
             <br/>
             <div className="row">
                 <div className="column-content">

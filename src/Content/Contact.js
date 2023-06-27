@@ -14,7 +14,7 @@ function Contact(){
     return (
         <section id="contact">
             <hr></hr>
-            <h1 className="bigName">Kontakty</h1>
+            <h1 className="sectionName">Kontakty</h1>
             
             <div className="row">
                 <div className="column">
