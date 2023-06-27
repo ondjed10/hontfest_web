@@ -14,12 +14,12 @@ function About(){
             <span className="bigName">O nás</span>
             <br/>
             <div className="row">
-                <div className="column content">
+                <div className="column-content">
                     <p className="infoText">
                     Hontfest je kresťanský hudobný festival v regióne Hont, v meste Dudince. Našim hlavným cieľom je hovoriť ľudom o Bohu a to prostredníctvom umenia, hudby, príjemnej atmosféry, svedectiev, osobného príkladu či diskusie. Návštevníkom sa takisto snažíme zaručiť umelecký zážitok vďaka kvalitným interpretom z celého Slovenska, ktorí na festivale každoročne vystupujú. Na Hontfeste myslíme aj na rodiny s deťmi a preto každý rok pre deti chystáme množstvo programu. 
                     </p>
                 </div>
-                <div className="column">
+                <div className="column-video">
                     <iframe 
                         src="https://www.youtube.com/embed/aV7xjehmwCg"
                         allow="autoplay; encrypted-media"
@@ -32,12 +32,12 @@ function About(){
             <br>
             </br>
             <div className="row">
-                <div className="column-desc">
-                    
-                    Hont <br></br>
-                    fest <br></br>
-                    2022
-                    
+                <div className="column-desc">  
+                    <p className="wrap">
+                        Hont
+                        fest
+                        2022
+                    </p>
                 </div>
                 <div className="column-gallery">
                     <div className="gallery">

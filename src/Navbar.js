@@ -8,7 +8,7 @@ function Navbar(){
     return (
         <nav className="navbar__actions">
             <RedirectLink to='/'>
-                <img className="logo" src={logo} style={{float: 'left', marginLeft: -50+'px'}}></img>
+                <img className="logo" src={logo}></img>
             </RedirectLink>
             <ul style={{float: 'left', marginLeft: 30+'px'}}>
                 
