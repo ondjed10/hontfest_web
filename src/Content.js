@@ -22,20 +22,20 @@ function Content(){
             <div className="home">
                 
                 <div className='intro'>
-                    <h1 style={{fontSize: 120+'px', textTransform: 'uppercase'}}>Ako v nebi, tak i na zemi</h1>
+                    <h1 className="bigName">Ako v nebi, tak i na zemi</h1>
                 </div>
                 <Countdown/>
             </div>
             <About/>
             <section id='program'>
                 <hr></hr>
-                <h1 style={{fontSize: 100+'px', textTransform: 'uppercase'}}>program</h1>
+                <h1 className="bigName">program</h1>
                 <LineUp/> 
             </section>
             {/* <FAQ /> */}
             <section id="support">
                 <hr></hr>
-                <h1 style={{fontSize: 100+'px', textTransform: 'uppercase'}}>Podporte nás</h1>
+                <h1 className="bigName">Podporte nás</h1>
             
             </section>
             <Contact/>

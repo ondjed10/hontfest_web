@@ -14,18 +14,21 @@ function Contact(){
     return (
         <section id="contact">
             <hr></hr>
-            <h1 style={{fontSize: 100+'px', textTransform: 'uppercase'}}>Kontakty</h1>
+            <h1 className="bigName">Kontakty</h1>
             
             <div className="row">
                 <div className="column">
-                        <p>Kontaktná osoba: Dominik Belica</p>
-                        <p>Telefónne číslo: +421904343305</p>
-                        <p>Email: dominik.belica@gmail.com</p>
+                        <p className="contactText">Kontaktná osoba: Dominik Belica</p>
+                        <p className="contactText">Telefónne číslo: +421904343305</p>
+                        <p className="contactText">Email: dominik.belica@gmail.com</p>
                 </div>
                 <div className="column">
-                    <Map
-                        location={location}
-                    />
+                    <div className="Map">
+                        <Map
+                            location={location}
+                        /> 
+                    </div>
+                    
                 </div>
             </div>
             

@@ -21,7 +21,7 @@ export const LineUp = () => {
         <div >
             <div className="lineup">
                 <div key={index} className="band roll-out out">
-                    <span style={{fontSize: 75+'px', letterSpacing: 7+'px'}}>{bands[index]}</span>
+                    <span className="lineUpName">{bands[index]}</span>
                 </div>        
             </div>
             <div className="row">
