@@ -48,7 +48,7 @@
   background-image: url('../src/images/2.png');
   background-position: center;
   color: #fff;
-  height: 100px;
+  height: fit-content;
   margin: auto;
   border-radius: 30px;
   justify-content: center;
@@ -68,7 +68,7 @@ html, body {
 }
 
 .infoText {
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 
 .lineup {
@@ -240,7 +240,7 @@ ul {
 
 section {
   display: block;
-  height: 100vw;
+  height: fit-content;
   font-size: 32px;
   font-weight: bold;
   place-items: center;
@@ -268,7 +268,7 @@ li:hover {
 }
 
 #about {
-  height: 100vw;
+  height: fit-content;
 }
 
 #contact {
