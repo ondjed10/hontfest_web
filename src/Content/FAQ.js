@@ -33,23 +33,29 @@ export const FAQ = () => {
 
     return (
         <div className="content_container">
-            <section id="faq">
-                <h1 style={{fontSize: 100+'px', textTransform: 'uppercase'}}>Časté otázky</h1>
-                <div className="faq">
-                    {
-                        [...Qs].map((val,i) => {
-                            return (
-                                <div>
-                                    <div className="Q" onClick={() => toggleState(i)} >{val} </div>
-                                    {toggle[i] && <div className="A">{As[i]}</div>}
-                                
-                                </div>
-
-                            )
-                        })
-                    }
+            <div className="home">
+                
+                <div className='intro'>
+                    <h1 className="bigName">Časté otázky</h1>
                 </div>
-            </section>
+            
+                <section id="faq">
+                    <div className="faq">
+                        {
+                            [...Qs].map((val,i) => {
+                                return (
+                                    <div>
+                                        <div className="Q" onClick={() => toggleState(i)} >{val} </div>
+                                        {toggle[i] && <div className="A">{As[i]}</div>}
+                                    
+                                    </div>
+
+                                )
+                            })
+                        }
+                    </div>
+                </section>
+            </div>
         </div>       
     )
 }

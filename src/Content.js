@@ -9,7 +9,6 @@ import stred from "../src/images/stred.png"
 
 function Content(){
 
-
     return (
         <div className="content_container">
             {/* <img
