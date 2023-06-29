@@ -10,7 +10,7 @@ export const LineUp = () => {
 
         const interval = setInterval(() => {
             setIndex((index + 1) % bands.length)
-        }, 2500)
+        }, 3000)
         return () => clearInterval(interval)
 
     },[index])

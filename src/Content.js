@@ -25,12 +25,12 @@ function Content(){
                 </div>
                 <Countdown/>
             </div>
-            <About/>
             <section id='program'>
                 <hr></hr>
                 <h1 className="sectionName">program</h1>
                 <LineUp/> 
             </section>
+            <About/>
             {/* <FAQ /> */}
             <section id="support">
                 <hr></hr>
