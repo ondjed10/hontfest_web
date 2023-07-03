@@ -6,39 +6,54 @@ import { Countdown } from "./Content/Countdown";
 import { LineUp } from "./Content/LineUp";
 import { FAQ } from "./Content/FAQ";
 import stred from "../src/images/stred.png"
+import QR from '../src/images/QR.jpg'
+import slider from '../src/images/slider.jpg'
+import obl from '../src/images/obdklznik.png'
 
 function Content(){
 
     return (
-        <div className="content_container">
-            {/* <img
-                 className="home-bg"
-                 src={stred}
-                 alt=""
-                 height={507}
-                 width={440}
-            /> */}
+        <div className="app-contatiner">
             <div className="home">
                 
-                <div className='intro'>
-                    <h1 className="bigName">Ako v nebi, tak i na zemi</h1>
-                </div>
+                <img src={slider}></img>
                 <Countdown/>
             </div>
-            <section id='program'>
-                <hr></hr>
-                <h1 className="sectionName">program</h1>
-                <LineUp/> 
-            </section>
-            <About/>
-            {/* <FAQ /> */}
-            <section id="support">
-                <hr></hr>
-                <h1 className="sectionName">Podporte nás</h1>
-            
-            </section>
-            <Contact/>
+            <div className="content_container">
+           
+                <section id='program'>
+                    <hr></hr>
+                    <div className="sectionNameContainer">
+                        <h1 className="sectionName">program</h1>
+                    </div>
+                        
+                    <LineUp/> 
+                </section>
+                <About/>
+                {/* <FAQ /> */}
+                <section id="support">
+                    <hr></hr>
+                    <div className="sectionNameContainer">
+                        <h1 className="sectionName">Podporte nás</h1>
+                       
+                        
+                    </div>
+                    
+                    <div className="row">
+                        <div className="column">
+                            <h4>Aj ty môžeš spolu s nami tvoriť Hontfest.</h4>
+                            <p>Našou kazdorocnou snahou je umožniť vstup na festival  každému a zadarmo. Hľadáme ľudí, ktorým je naša snaha sympatická a chcú nás v tomto diele podporiť. Ak máš možnosť a chuť, staň sa aj Ty tvorcom Hontfestu.</p>
+                        </div>
+                        <div className="column">
+                            <img src={QR}>
+                            </img>
+                        </div>
+                    </div>            
+                </section>
+                <Contact/>
+            </div>
         </div>
+        
     )
 }
 
