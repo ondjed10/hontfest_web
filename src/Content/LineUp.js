@@ -19,11 +19,11 @@ export const LineUp = () => {
 
     return (
         <div >
-            <div className="lineup">
+            {/* <div className="lineup">
                 <div key={index} className="band roll-out out">
                     <span className="lineUpName">{bands[index]}</span>
                 </div>        
-            </div>
+            </div> */}
             <div className="row">
                 <div className="column">
                     <h3 className="program">STAGE</h3>
