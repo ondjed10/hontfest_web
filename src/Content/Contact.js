@@ -1,5 +1,6 @@
 import React from "react";
 import Map from "./Map";
+import {IoMdCall, IoMdMail, IoMdContact} from 'react-icons/io'
 
 function Contact(){
     const location = {
@@ -20,12 +21,8 @@ function Contact(){
             
             
             <div className="row">
-                <div className="column">
-                        <p className="contactText">Kontaktná osoba: Dominik Belica</p>
-                        <p className="contactText">Telefónne číslo: +421904343305</p>
-                        <p className="contactText">Email: dominik.belica@gmail.com</p>
-                </div>
-                <div className="column">
+                
+                <div className="columnMap">
                     <div className="Map">
                         <Map
                             location={location}
@@ -33,6 +30,21 @@ function Contact(){
                     </div>
                     
                 </div>
+                <div className="columnMap">
+                    <div className="Map">
+                        <Map
+                            location={location}
+                        /> 
+                    </div>
+                    
+                </div>
+            </div>
+            <div className="row">
+                        <p className="contactText">
+                                <IoMdContact/>  Dominik Belica
+                        </p>
+                        <p className="contactText"><IoMdCall />  +421904343305</p>
+                        <p className="contactText"><IoMdMail />  dominik.belica@gmail.com</p>        
             </div>
             
         </section>

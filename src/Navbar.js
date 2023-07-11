@@ -24,7 +24,7 @@ function Navbar(){
                 <div style={{float: 'left', marginLeft: 35+'px'}}>
                     <li className="nav-item">
                         <Link activeClass="active" smooth spy to='about'>
-                            o nás
+                            o festivale
                         </Link>
                     </li>
                     <li className="nav-item">
@@ -43,11 +43,11 @@ function Navbar(){
                             kontakty
                         </Link>
                     </li>
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                         <RedirectLink to="/faq">
                             faq
                         </RedirectLink>
-                    </li>
+                    </li> */}
                 </div>   
                 <div className="nav-icons">
                     <ul className={active ? "active nav-menu" : "nav-menu"}>      

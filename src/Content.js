@@ -17,22 +17,23 @@ function Content(){
             <div className="home">
                 
                 <img src={slider}></img>
-                <Countdown/>
+                {/* <Countdown/> */}
             </div>
             <div className="content_container">
            
-                <section id='program'>
-                    <hr></hr>
+
+                <About/>
+                
+            </div>
+            <section id='program'>
                     <div className="sectionNameContainer">
                         <h1 className="sectionName">program</h1>
                     </div>
                         
                     <LineUp/> 
-                </section>
-                <About/>
-                {/* <FAQ /> */}
+            </section>
+            <div className="content_container">
                 <section id="support">
-                    <hr></hr>
                     <div className="sectionNameContainer">
                         <h1 className="sectionName">Podporte nás</h1>
                        

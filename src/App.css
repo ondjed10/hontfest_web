@@ -39,8 +39,8 @@
 
 .sectionName {
   text-transform: uppercase;
-  transform: skew(3deg, -8deg) translate(-60%, 100%);
-  font-size: 4vw;
+  transform: skew(3deg, -8deg) translate(-50%, -15%);
+  font-size: 3vw;
   position: absolute;
   color: #fff;
   /* top: 50%; */
@@ -48,17 +48,22 @@
 }
 
 .sectionNameContainer {
+  margin: 30px 0;
   background-image: url('../src/images/obdklznik.png');
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 300px;
-  position: relative;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
 .contactText {
-  font-size: 2.5vw;
+  font-size: 1.8vw;
+  width: 32%;
+  color: #1D74FF;
 }
 
 .countDown {
@@ -94,6 +99,7 @@ html, body {
 .infoText {
   padding: 10;
   font-size: 2vw;
+  color: #1D74FF;
 }
 
 .lineup {
@@ -119,7 +125,10 @@ html, body {
 }
 
 .program {
-  font-size: 4vw;
+  font-size: 3vw;
+  text-transform: uppercase;
+  color: #fff;
+  transform: skew(3deg, -8deg);
 }
 
 .dropdown {
@@ -226,6 +235,11 @@ header {
   float: left;
 }
 
+.columnMap {
+  width: 45%;
+  float: left;
+}
+
 .column-content {
   width: 45%;
   float: left;
@@ -235,7 +249,16 @@ header {
   border-radius: 5vw;
 }
 
+.themeColumn {
+  width: 100%;
+  height: auto;
+}
+
 .column:nth-child(odd) {
+  clear: left;
+}
+
+.columnMap:nth-child(odd) {
   clear: left;
 }
 
@@ -260,6 +283,12 @@ header {
 .row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rowContact {
+  display: block;
   justify-content: space-between;
 }
 
@@ -310,11 +339,36 @@ hr {
   animation: rollout 3.1s;
 }
 
+.grid {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+
+
+#program {
+  background-color: #F79204;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 20px;
+}
+
+.cell {
+  padding: 10px;
+  /* background-color: #999; */
+}
+
+.lineUpImg {
+  width: 100%;
+  height: auto;
+}
+
 /* footer */
 .footer-box {
   /* padding: 80px 60px; */
-  background: black;
-  position: absolute;
+  background: #1D74FF;
+  /* position: absolute; */
   /* margin-top: 400px; */
   width: 100%;
   height: 150px;
@@ -384,7 +438,7 @@ hr {
 }
 
 @media (max-width: 800px) {
-  .column, .column-desc, .column-gallery, .column-content {
+  .column, .column-desc, .column-gallery, .column-content, .columnMap {
     width: 100%;
     height: fit-content;
     margin-right: 0.25cm;
@@ -398,10 +452,22 @@ hr {
 
   .infoText {
     font-size: 6vw;
+    color: #1D74FF;
   }
 
   .contactText {
+    /* display: block; */
+    width: 100%;
+    color: #1D74FF;
     font-size: 4.5vw;
+  }
+
+  .sectionName {
+    font-size: 6vw;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -482,4 +548,12 @@ hr {
   .mobileNav:hover .bar {
       background-color: orange;
   }
+}
+
+@media (min-width: 2000px) {
+
+  .App {
+    background-image: url('../src/images/pozadie4k.jpg');
+  }
+
 }

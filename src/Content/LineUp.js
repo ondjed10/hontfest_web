@@ -18,7 +18,7 @@ export const LineUp = () => {
 
 
     return (
-        <div >
+        <div>
             {/* <div className="lineup">
                 <div key={index} className="band roll-out out">
                     <span className="lineUpName">{bands[index]}</span>
@@ -26,10 +26,25 @@ export const LineUp = () => {
             </div> */}
             <div className="row">
                 <div className="column">
-                    <h3 className="program">STAGE</h3>
+                    <div className="sectionNameContainer">
+                        <h3 className="program">STAGE</h3>
+                    </div>
+                    
+                    {
+                        bands.map(band => {
+                            return <p className="bands"> XX:YY  Insert band name</p>
+                        })
+                    }
                 </div>
                 <div className="column">
-                    <h3 className="program">DISKUSNÝ STAN</h3>                    
+                    <div className="sectionNameContainer">
+                        <h3 className="program">Diskusný stan</h3>
+                    </div> 
+                    {
+                        bands.map(band => {
+                            return <p className="bands"> XX:YY  Insert band name</p>
+                        })
+                    }                  
                 </div>
             </div>
         </div>
