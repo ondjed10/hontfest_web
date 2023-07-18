@@ -5,7 +5,14 @@ import About from "./Content/About.js";
 // import { LineUp } from "./Content/LineUp";
 import QR from '../src/images/QR.jpg'
 import slider from '../src/images/slider.jpg'
-
+import sima from '../src/images/lineUp/sima magušinová.png'
+import agatik from '../src/images/lineUp/FS AGATIk.png'
+import darmo from '../src/images/lineUp/andrej darmo.png'
+import ego from '../src/images/lineUp/ego.png'
+import lamac from '../src/images/lineUp/lch live.png'
+import mdom from '../src/images/lineUp/martindom_2.png'
+import timothy from '../src/images/lineUp/timothy.png'
+import tomw from '../src/images/lineUp/towmeot.png'
 
 function Content(){
 
@@ -17,18 +24,51 @@ function Content(){
                 {/* <Countdown/> */}
             </div>
             <div className="content_container">
-           
-
-                <About/>
                 
-            </div>
-            {/* <section id='program'>
-                    <div className="sectionNameContainer">
+            <About/>
+            
+            <section id='ucink'>
+                <div className="sectionNameContainer">
+                    <h1 className="sectionName">Účinkujúci</h1>
+                </div>
+
+                <div class="grid">
+                    <div class="cell">
+                        <img className="lineUpImg" alt="sima" src={sima}></img>
+                    </div>
+                    <div class="cell">
+                        <img className="lineUpImg" alt="timothy" src={timothy}></img>
+                    </div>
+                    <div class="cell">
+                        <img className="lineUpImg" alt="lamace" src={lamac}></img>
+                    </div>
+                    <div class="cell">
+                        <img className="lineUpImg" alt="ego" src={ego}></img>
+                    </div>
+                    <div class="cell">
+                        <img className="lineUpImg" alt="tomw" src={tomw}></img>
+                    </div>
+                    <div class="cell">
+                        <img className="lineUpImg" alt="agatik" src={agatik}></img>
+                    </div>
+                    <div class="cell">
+                        <img className="lineUpImg" alt="martin" src={mdom}></img>
+                    </div>
+                    <div class="cell">
+                        <img className="lineUpImg" alt="darmo" src={darmo}></img>
+                    </div>
+                </div>
+                    {/* <div className="sectionNameContainer">
                         <h1 className="sectionName">program</h1>
                     </div>
                         
-                    <LineUp/> 
-            </section> */}
+                    <LineUp/>  */}
+            </section>
+
+                
+                
+            </div>
+            
             <div className="content_container">
                 <section id="support">
                     <div className="sectionNameContainer">

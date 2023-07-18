@@ -28,8 +28,8 @@ function Navbar(){
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link activeClass="active" smooth spy to='program'>
-                            program
+                        <Link activeClass="active" smooth spy to='ucink'>
+                            účinkujúci
                         </Link>
                         
                     </li>
