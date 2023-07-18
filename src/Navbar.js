@@ -67,11 +67,11 @@ function Navbar(){
             
 
 
-            <div className="mobileNav" onClick={()=> toggleActive()}>
+            {/* <div className="mobileNav" onClick={()=> toggleActive()}>
                 <div className="bar"></div>
                 <div className="bar"></div>
                 <div className="bar"></div>
-            </div>
+            </div> */}
         </nav>
     )
 }

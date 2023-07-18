@@ -489,6 +489,10 @@ hr {
     height: 150px;
   }
 
+  .nav-links{
+    display: none;
+  }
+
   .column-video {
     width: 100%;
     height: 350px;
@@ -546,24 +550,15 @@ hr {
 
 @media (max-width: 800px) {
   
-  .navbar {
+  /* .navbar {
     flex-direction: column;
-  }
+  } */
 
   .logoContainer {
       width: 100%;
       height: auto;
   }
 
-  .nav-icons{
-    float: none;
-  }
-
-  .nav-menu {
-      width: 100%;
-      display: none;
-      align-items: center;
-  }
 
   .active {
     display: block;
