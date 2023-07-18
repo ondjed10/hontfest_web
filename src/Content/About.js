@@ -6,16 +6,16 @@ import hf2 from '../images/hf2022/hf2.jpg'
 import hf3 from '../images/hf2022/hf3.jpg'
 import hf4 from '../images/hf2022/hf4.jpg'
 import tema from '../images/téma.png';
-import stred from '../images/stred.png';
+import stred from '../images/stred1.png';
 import sima from '../images/lineUp/sima magušinová.png'
 import agatik from '../images/lineUp/FS AGATIk.png'
 import darmo from '../images/lineUp/andrej darmo.png'
 import ego from '../images/lineUp/ego.png'
 import lamac from '../images/lineUp/lch live.png'
-import mdom from '../images/lineUp/martindom.png'
+import mdom from '../images/lineUp/martindom_2.png'
 import timothy from '../images/lineUp/timothy.png'
 import tomw from '../images/lineUp/towmeot.png'
-import zub from '../images/lineUp/zubajovci_foto mozno zmenit.png'
+// import zub from '../images/lineUp/zubajovci_foto mozno zmenit.png'
 
 
 
@@ -27,17 +27,20 @@ function About(){
             </div>
             
             <br/>
-            <div className="row">
-                <div className="column">
-                    <img src={tema} className="themeColumn">
-                    </img>
-                </div>
-                <div className="column">
-                    <img src={stred} className="themeColumn">
-                    </img>
-                </div>
+            {/* <div className="themeContainer"> */}
+                <div className="row">
+                    <div className="column1">
+                        <img src={tema} className="themeColumn">
+                        </img>
+                    </div>
+                    <div className="column2">
+                        <img src={stred} className="themeColumn">
+                        </img>
+                    </div>
 
-            </div>
+                </div>
+            {/* </div> */}
+            
             <div className="row">
                     <p className="infoText">
                     Hontfest je kresťanský hudobný festival v regióne Hont, v meste Dudince. Našim hlavným cieľom je hovoriť ľudom o Bohu a to prostredníctvom umenia, hudby, príjemnej atmosféry, svedectiev, osobného príkladu či diskusie. Návštevníkom sa takisto snažíme zaručiť umelecký zážitok vďaka kvalitným interpretom z celého Slovenska, ktorí na festivale každoročne vystupujú. Na Hontfeste myslíme aj na rodiny s deťmi a preto každý rok pre deti chystáme množstvo programu. 
@@ -61,9 +64,9 @@ function About(){
                 <div class="cell">
                     <img className="lineUpImg" src={ego}></img>
                 </div>
-                <div class="cell">
+                {/* <div class="cell">
                     <img className="lineUpImg" src={zub}></img>
-                </div>
+                </div> */}
                 <div class="cell">
                     <img className="lineUpImg" src={tomw}></img>
                 </div>

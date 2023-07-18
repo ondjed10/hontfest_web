@@ -1,14 +1,38 @@
-import React from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Map from "./Map";
 import {IoMdCall, IoMdMail, IoMdContact} from 'react-icons/io'
 
+function useMediaQuery(query) {
+    const mediaQuery = useMemo(() => window.matchMedia(query), [query]);
+    const [match, setMatch] = useState(mediaQuery.matches);
+  
+    useEffect(() => {
+      const onChange = () => setMatch(mediaQuery.matches);
+      mediaQuery.addEventListener("change", onChange);
+  
+      return () => mediaQuery.removeEventListener("change", onChange);
+    }, [mediaQuery]);
+  
+    return match;
+}
+
+function useMediaQueries() {
+    const md = useMediaQuery("(max-width: 800px)");
+    // const lg = useMediaQuery("(min-width: 1200px)");
+  
+    return { md };
+}
+
+
 function Contact(){
+    const { md } = useMediaQueries()
+
     const location = {
         center: {
             lat: 48.165916315391726,
             lng: 18.8846644087941,
         },
-        zoom: 15,
+        zoom: md ? 14 : 15,
         address: 'Amfiteáter Dudince'
     }
 
@@ -22,14 +46,14 @@ function Contact(){
             
             <div className="row">
                 
-                <div className="columnMap">
+                {/* <div className="columnMap">
                     <div className="Map">
                         <Map
                             location={location}
                         /> 
                     </div>
                     
-                </div>
+                </div> */}
                 <div className="columnMap">
                     <div className="Map">
                         <Map

@@ -2,13 +2,10 @@ import React from "react";
 
 import Contact from "./Content/Contact"
 import About from "./Content/About.js";
-import { Countdown } from "./Content/Countdown";
 import { LineUp } from "./Content/LineUp";
-import { FAQ } from "./Content/FAQ";
-import stred from "../src/images/stred.png"
 import QR from '../src/images/QR.jpg'
 import slider from '../src/images/slider.jpg'
-import obl from '../src/images/obdklznik.png'
+
 
 function Content(){
 
@@ -25,13 +22,13 @@ function Content(){
                 <About/>
                 
             </div>
-            <section id='program'>
+            {/* <section id='program'>
                     <div className="sectionNameContainer">
                         <h1 className="sectionName">program</h1>
                     </div>
                         
                     <LineUp/> 
-            </section>
+            </section> */}
             <div className="content_container">
                 <section id="support">
                     <div className="sectionNameContainer">

@@ -7,8 +7,15 @@
   font-family: 'Oswald', sans-serif;
   background-image: url('../src/images/pozadie.jpg');
   background-attachment: fixed;
-  margin-top: 15px;
+  /* margin-top: 15px; */
   width: 100%;
+}
+
+.nav-links {
+  float: left;
+  margin-left: 35px;
+  height: auto;
+  line-height: 2rem;
 }
 
 /* .app-container {
@@ -39,7 +46,7 @@
 
 .sectionName {
   text-transform: uppercase;
-  transform: skew(3deg, -8deg) translate(-50%, -15%);
+  transform: translate(-50%, -15%)  ;
   font-size: 3vw;
   position: absolute;
   color: #fff;
@@ -48,16 +55,19 @@
 }
 
 .sectionNameContainer {
-  margin: 30px 0;
-  background-image: url('../src/images/obdklznik.png');
+  margin-top: 30px;
+  margin-bottom: 15px;
+  background-image: url('../src/images/obdlznik.png');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 40%;
   width: 100%;
-  height: 180px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  transform: skew(3deg, -7deg);
 }
 
 .contactText {
@@ -181,10 +191,6 @@ html, body {
     padding-right: 20%;
 }
 
-header {
-  height: auto;
-}
-
 .navbar {
   position: sticky;
   position: -webkit-sticky;
@@ -195,6 +201,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
 }
 
 .nav-menu {
@@ -209,7 +216,8 @@ header {
   display: inline-block;
   margin-left: 10px;
   font-size: 1.5rem;
-  line-height: 1.5rem;
+  height: fit-content;
+  vertical-align: middle;
 }
 
 .nav-icons {
@@ -225,6 +233,11 @@ header {
   width: 100%;
 }
 
+.themeContainer {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
 .intro {
   text-align: center;
   justify-content: center;
@@ -235,8 +248,18 @@ header {
   float: left;
 }
 
+.column2 {
+  width: 60%;
+  /* float: left; */
+}
+
+.column1 {
+  width: 40%;
+  float: left;
+}
+
 .columnMap {
-  width: 45%;
+  width: 100%;
   float: left;
 }
 
@@ -371,11 +394,18 @@ hr {
   /* position: absolute; */
   /* margin-top: 400px; */
   width: 100%;
-  height: 150px;
+  height: auto;
 
   /* @media (max-width: 800px) {
     padding: 70px 30px;
   }; */
+}
+
+.footer-img {
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 80%;
+  height: auto;
 }
 
 .footer-container {
@@ -435,14 +465,28 @@ hr {
     flex-wrap: wrap;
     gap: 10px;
   }
+
+  .sectionNameContainer {
+    background-size: 60%;
+    height: 50px;
+  }
 }
 
 @media (max-width: 800px) {
-  .column, .column-desc, .column-gallery, .column-content, .columnMap {
+  .column, .column-desc, .column-gallery, .column-content, .column1, .column2 {
     width: 100%;
-    height: fit-content;
+    height: auto;
     margin-right: 0.25cm;
     justify-content: center;
+  }
+
+  .columnMap {
+    width: 100%;
+    height: 150px;
+  }
+
+  .mapContainer{
+    height: 150px;
   }
 
   .column-video {
@@ -469,6 +513,11 @@ hr {
   .grid {
     grid-template-columns: 1fr;
   }
+
+  .content_container {
+    padding-left: 15%;
+    padding-right: 15%;
+}
 }
 
 
@@ -503,6 +552,7 @@ hr {
 
   .logoContainer {
       width: 100%;
+      height: auto;
   }
 
   .nav-icons{

@@ -21,7 +21,7 @@ function Navbar(){
                 </RedirectLink>
             </div>
             <ul className={active ? "active nav-menu" : "nav-menu"}>
-                <div style={{float: 'left', marginLeft: 35+'px'}}>
+                <div className="nav-links">
                     <li className="nav-item">
                         <Link activeClass="active" smooth spy to='about'>
                             o festivale
