@@ -22,7 +22,7 @@ import tomw from '../images/lineUp/towmeot.png'
 function About(){
     return (
         <section id="about">
-            <div className="sectionNameContainer">
+            <div className="sectionNameContainer" id="top">
                 <h1 className="sectionName">O festivale</h1>
             </div>
             
