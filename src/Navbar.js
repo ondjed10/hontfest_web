@@ -9,15 +9,15 @@ function Navbar(){
 
     const [active, setActive] = useState(false)
 
-    const toggleActive = () => {
-        setActive(!active)
-    }
+    // const toggleActive = () => {
+    //     setActive(!active)
+    // }
 
     return (
         <nav className="navbar">
             <div className="logoContainer">
                  <RedirectLink to='/'>
-                    <img className="logo" src={logo}></img>
+                    <img className="logo" alt="logo" src={logo}></img>
                 </RedirectLink>
             </div>
             <ul className={active ? "active nav-menu" : "nav-menu"}>

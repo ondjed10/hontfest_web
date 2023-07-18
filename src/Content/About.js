@@ -1,10 +1,5 @@
 import React from "react";
-import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
-import hf1 from '../images/hf2022/hf1.jpeg'
-import hf2 from '../images/hf2022/hf2.jpg'
-import hf3 from '../images/hf2022/hf3.jpg'
-import hf4 from '../images/hf2022/hf4.jpg'
 import tema from '../images/téma.png';
 import stred from '../images/stred1.png';
 import sima from '../images/lineUp/sima magušinová.png'
@@ -17,8 +12,6 @@ import timothy from '../images/lineUp/timothy.png'
 import tomw from '../images/lineUp/towmeot.png'
 // import zub from '../images/lineUp/zubajovci_foto mozno zmenit.png'
 
-
-
 function About(){
     return (
         <section id="about">
@@ -30,11 +23,11 @@ function About(){
             {/* <div className="themeContainer"> */}
                 <div className="row">
                     <div className="column1">
-                        <img src={tema} className="themeColumn">
+                        <img src={tema} alt="tema" className="themeColumn">
                         </img>
                     </div>
                     <div className="column2">
-                        <img src={stred} className="themeColumn">
+                        <img src={stred} alt="koruna" className="themeColumn">
                         </img>
                     </div>
 
@@ -53,31 +46,28 @@ function About(){
 
             <div class="grid">
                 <div class="cell">
-                    <img className="lineUpImg" src={sima}></img>
+                    <img className="lineUpImg" alt="sima" src={sima}></img>
                 </div>
                 <div class="cell">
-                    <img className="lineUpImg" src={timothy}></img>
+                    <img className="lineUpImg" alt="timothy" src={timothy}></img>
                 </div>
                 <div class="cell">
-                    <img className="lineUpImg" src={lamac}></img>
+                    <img className="lineUpImg" alt="lamace" src={lamac}></img>
                 </div>
                 <div class="cell">
-                    <img className="lineUpImg" src={ego}></img>
-                </div>
-                {/* <div class="cell">
-                    <img className="lineUpImg" src={zub}></img>
-                </div> */}
-                <div class="cell">
-                    <img className="lineUpImg" src={tomw}></img>
+                    <img className="lineUpImg" alt="ego" src={ego}></img>
                 </div>
                 <div class="cell">
-                    <img className="lineUpImg" src={agatik}></img>
+                    <img className="lineUpImg" alt="tomw" src={tomw}></img>
                 </div>
                 <div class="cell">
-                    <img className="lineUpImg" src={mdom}></img>
+                    <img className="lineUpImg" alt="agatik" src={agatik}></img>
                 </div>
                 <div class="cell">
-                    <img className="lineUpImg" src={darmo}></img>
+                    <img className="lineUpImg" alt="martin" src={mdom}></img>
+                </div>
+                <div class="cell">
+                    <img className="lineUpImg" alt="darmo" src={darmo}></img>
                 </div>
             </div>
 

@@ -2,7 +2,7 @@ import React from "react";
 
 import Contact from "./Content/Contact"
 import About from "./Content/About.js";
-import { LineUp } from "./Content/LineUp";
+// import { LineUp } from "./Content/LineUp";
 import QR from '../src/images/QR.jpg'
 import slider from '../src/images/slider.jpg'
 
@@ -13,7 +13,7 @@ function Content(){
         <div className="app-contatiner">
             <div className="home">
                 
-                <img src={slider}></img>
+                <img alt="hero" src={slider}></img>
                 {/* <Countdown/> */}
             </div>
             <div className="content_container">
@@ -43,7 +43,7 @@ function Content(){
                             <p>Našou kazdorocnou snahou je umožniť vstup na festival  každému a zadarmo. Hľadáme ľudí, ktorým je naša snaha sympatická a chcú nás v tomto diele podporiť. Ak máš možnosť a chuť, staň sa aj Ty tvorcom Hontfestu.</p>
                         </div>
                         <div className="column">
-                            <img src={QR}>
+                            <img alt="qr" src={QR}>
                             </img>
                         </div>
                     </div>            
