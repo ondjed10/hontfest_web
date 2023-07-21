@@ -196,8 +196,8 @@ html, body {
 }
 
 .navbar {
-  position: sticky;
-  position: -webkit-sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 99;
   background-color: #fff;
