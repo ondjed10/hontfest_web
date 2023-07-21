@@ -445,7 +445,7 @@ hr {
   font-weight: 300;
 }
 
-@media (max-width: 868px) {
+/* @media (max-width: 868px) {
   .nav {
     display: flex;
     align-items: center;
@@ -460,7 +460,7 @@ hr {
     box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
   }
   
-}
+} */
 
 @media (max-width: 800px) {
   .row {
