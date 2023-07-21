@@ -2,7 +2,7 @@
   "name": "hontfest_web",
   "version": "0.1.0",
   "private": true,
-  "homepage": " https://ondjed10.github.io/hontfest_web",
+  "homepage": ".",
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.1.35",
     "@react-google-maps/api": "^2.18.1",
