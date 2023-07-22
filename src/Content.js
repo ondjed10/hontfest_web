@@ -25,62 +25,54 @@ function Content(){
             </div>
             <div className="content_container">
                 
-            <About/>
-            
-            <section id='ucink'>
-                <div className="sectionNameContainer">
-                    <h1 className="sectionName">Účinkujúci</h1>
-                </div>
-
-                <div class="grid">
-                    <div class="cell">
-                        <img className="lineUpImg" alt="sima" src={sima}></img>
-                    </div>
-                    <div class="cell">
-                        <img className="lineUpImg" alt="timothy" src={timothy}></img>
-                    </div>
-                    <div class="cell">
-                        <img className="lineUpImg" alt="lamace" src={lamac}></img>
-                    </div>
-                    <div class="cell">
-                        <img className="lineUpImg" alt="ego" src={ego}></img>
-                    </div>
-                    <div class="cell">
-                        <img className="lineUpImg" alt="tomw" src={tomw}></img>
-                    </div>
-                    <div class="cell">
-                        <img className="lineUpImg" alt="agatik" src={agatik}></img>
-                    </div>
-                    <div class="cell">
-                        <img className="lineUpImg" alt="martin" src={mdom}></img>
-                    </div>
-                    <div class="cell">
-                        <img className="lineUpImg" alt="darmo" src={darmo}></img>
-                    </div>
-                </div>
-                    {/* <div className="sectionNameContainer">
-                        <h1 className="sectionName">program</h1>
-                    </div>
-                        
-                    <LineUp/>  */}
-            </section>
-
+                <About/>
                 
-                
-            </div>
-            
-            <div className="content_container">
+                <section id='ucink'>
+                    <div className="sectionNameContainer">
+                        <h1 className="sectionName" id="ucinkHead">Účinkujúci</h1>
+                    </div>
+
+                    <div class="grid">
+                        <div class="cell">
+                            <img className="lineUpImg" alt="sima" src={sima}></img>
+                        </div>
+                        <div class="cell">
+                            <img className="lineUpImg" alt="timothy" src={timothy}></img>
+                        </div>
+                        <div class="cell">
+                            <img className="lineUpImg" alt="lamace" src={lamac}></img>
+                        </div>
+                        <div class="cell">
+                            <img className="lineUpImg" alt="ego" src={ego}></img>
+                        </div>
+                        <div class="cell">
+                            <img className="lineUpImg" alt="tomw" src={tomw}></img>
+                        </div>
+                        <div class="cell">
+                            <img className="lineUpImg" alt="agatik" src={agatik}></img>
+                        </div>
+                        <div class="cell">
+                            <img className="lineUpImg" alt="martin" src={mdom}></img>
+                        </div>
+                        <div class="cell">
+                            <img className="lineUpImg" alt="darmo" src={darmo}></img>
+                        </div>
+                    </div>
+                        {/* <div className="sectionNameContainer">
+                            <h1 className="sectionName">program</h1>
+                        </div>
+                            
+                        <LineUp/>  */}
+                </section>
                 <section id="support">
                     <div className="sectionNameContainer">
-                        <h1 className="sectionName">Podporte nás</h1>
-                       
-                        
+                        <h1 className="sectionName" id="supportHead">Podporte nás</h1>      
                     </div>
                     
                     <div className="row">
                         <div className="column">
                             <h4>Aj ty môžeš spolu s nami tvoriť Hontfest.</h4>
-                            <p>Našou kazdorocnou snahou je umožniť vstup na festival  každému a zadarmo. Hľadáme ľudí, ktorým je naša snaha sympatická a chcú nás v tomto diele podporiť. Ak máš možnosť a chuť, staň sa aj Ty tvorcom Hontfestu.</p>
+                            <p className="infoText">Našou každoročnou snahou je umožniť vstup na festival každému a zadarmo. Hľadáme ľudí, ktorým je naša snaha sympatická a chcú nás v tomto diele podporiť. Ak máš možnosť a chuť, staň sa aj Ty tvorcom Hontfestu.</p>
                         </div>
                         <div className="column">
                             <img alt="qr" src={QR}>
@@ -89,6 +81,7 @@ function Content(){
                     </div>            
                 </section>
                 <Contact/>
+                
             </div>
         </div>
         

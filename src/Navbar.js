@@ -23,23 +23,23 @@ function Navbar(){
             <ul className={active ? "active nav-menu" : "nav-menu"}>
                 <div className="nav-links">
                     <li className="nav-item">
-                        <Link activeClass="active" smooth spy to='about'>
+                        <Link activeClass="active" smooth spy to='aboutHead'>
                             o festivale
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link activeClass="active" smooth spy to='ucink'>
+                        <Link activeClass="active" smooth spy to='ucinkHead'>
                             účinkujúci
                         </Link>
                         
                     </li>
                     <li className="nav-item">
-                        <Link activeClass="active" smooth spy to='support'>
+                        <Link activeClass="active" smooth spy to='supportHead'>
                             podporte nás
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link activeClass="active" smooth spy to='contact'>
+                        <Link activeClass="active" smooth spy to='contactHead'>
                             kontakty
                         </Link>
                     </li>
