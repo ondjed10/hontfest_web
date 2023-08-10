@@ -9,11 +9,9 @@ function About(){
     return (
         <section id="about">
             <div className="sectionNameContainer" id="top">
-                <h1 className="sectionName" id="aboutHead">O festivale</h1>
+                <p className="sectionName" id="aboutHead">O festivale</p>
             </div>
             
-            <br/>
-            {/* <div className="themeContainer"> */}
                 <div className="row">
                     <div className="column1">
                         <img src={tema} alt="tema" className="themeColumn">
@@ -25,7 +23,6 @@ function About(){
                     </div>
 
                 </div>
-            {/* </div> */}
             
             <div className="row">
                     <p className="infoText">
