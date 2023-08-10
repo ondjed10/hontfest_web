@@ -14,8 +14,8 @@
 .nav-links {
   float: left;
   margin-left: 35px;
-  height: auto;
-  line-height: 2rem;
+  height: 100%;
+  /* line-height: 2rem; */
 }
 
 /* .app-container {
@@ -47,11 +47,10 @@
 
 .sectionName {
   text-transform: uppercase;
-  transform: translate(-50%, -15%)  ;
+  transform: translate(-50%, 0%)  ;
   font-size: 3vw;
   position: absolute;
   color: #fff;
-  /* top: 50%; */
   left: 50%;
 }
 
@@ -69,6 +68,7 @@
   align-items: center;
   text-align: center;
   transform: skew(3deg, -7deg);
+  line-height: 100px;
 }
 
 #top {
@@ -114,6 +114,12 @@ html, body {
 .infoText {
   padding: 10;
   font-size: 2vw;
+  color: #1D74FF;
+}
+
+.callText {
+  padding: 10;
+  font-size: 1.7vw;
   color: #1D74FF;
 }
 
@@ -220,9 +226,11 @@ html, body {
 .nav-item {
   display: inline-block;
   margin-left: 10px;
-  font-size: 1.5rem;
-  height: fit-content;
+  font-size: 1.8rem;
+  height: 100%;
+  line-height: 50px;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .nav-icons {
@@ -255,6 +263,7 @@ html, body {
 
 .column2 {
   width: 60%;
+  height: 100%;
   /* float: left; */
 }
 
@@ -265,7 +274,13 @@ html, body {
 
 .columnMap {
   width: 100%;
+  height: 450px;
   float: left;
+}
+
+.columnMap iframe {
+  height: 100%;
+  width: 100%;
 }
 
 .column-content {
@@ -393,24 +408,18 @@ hr {
 }
 
 /* footer */
-.footer-box {
-  /* padding: 80px 60px; */
+.footer-box { 
   background: #1D74FF;
-  /* position: absolute; */
-  /* margin-top: 400px; */
   width: 100%;
-  height: auto;
-
-  /* @media (max-width: 800px) {
-    padding: 70px 30px;
-  }; */
+  height: 60px;
 }
 
 .footer-img {
   padding-left: 10%;
   padding-right: 10%;
-  width: 80%;
-  height: auto;
+  /* max-width: ; */
+  object-fit: contain;
+  max-height: 100%;
 }
 
 .footer-container {
@@ -487,7 +496,7 @@ hr {
 
   .columnMap {
     width: 100%;
-    height: 150px;
+    height: 250px;
   }
 
   .mapContainer{
@@ -505,6 +514,11 @@ hr {
 
   .infoText {
     font-size: 6vw;
+    color: #1D74FF;
+  }
+
+  .callText {
+    font-size: 5vw;
     color: #1D74FF;
   }
 
