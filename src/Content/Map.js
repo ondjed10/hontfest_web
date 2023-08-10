@@ -1,29 +1,10 @@
 import React from "react";
-import {useLoadScript, GoogleMap, Marker} from "@react-google-maps/api"
-
 
 function Map({location}){
 
-    const { isLoaded } = useLoadScript({
-        googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
-    })
-    
-    if (!isLoaded){
-        return <div>Loading....</div>
-    }
         return (
-            <GoogleMap
-                zoom={location.zoom}
-                center={location.center}
-                mapContainerClassName="mapContainer"
-            >
-                <Marker
-                    position={location.center}
-                >
-
-                </Marker>
-            </GoogleMap>
-
+            <iframe src="https://maps.google.com/maps?q=48.16572, 18.88157&z=15&output=embed" style={{border: 0+'px'}} width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">
+            </iframe>
         )
 }
 

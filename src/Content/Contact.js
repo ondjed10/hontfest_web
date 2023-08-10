@@ -45,21 +45,8 @@ function Contact(){
             
             <div className="row">
                 
-                {/* <div className="columnMap">
-                    <div className="Map">
-                        <Map
-                            location={location}
-                        /> 
-                    </div>
-                    
-                </div> */}
                 <div className="columnMap">
-                    <div className="Map">
-                        <Map
-                            location={location}
-                        /> 
-                    </div>
-                    
+                    <Map /> 
                 </div>
             </div>
             <div className="row">
