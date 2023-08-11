@@ -16,6 +16,7 @@ import tomw from '../src/images/lineUp/towmeot.png'
 import { Countdown } from "./Content/Countdown";
 import DiskusnyStanDesktop from "./Content/DiskusnyStanDesktop";
 import DiskusnyStanMobile from "./Content/DiskusnyStavMobile";
+import { LineUp } from "./Content/LineUp";
 
 function useMediaQuery(query) {
     const mediaQuery = useMemo(() => window.matchMedia(query), [query]);
@@ -92,7 +93,12 @@ function Content(){
                         <DiskusnyStanMobile/>
                     }
                 </section>
-
+            </div>
+            <section id="program">
+                <LineUp/>
+            </section> 
+            <br></br>          
+            <div className="content_container">       
                 <section id="support">
                     <div className="sectionNameContainer">
                         <h1 className="sectionName" id="supportHead">Podporte nás</h1>      

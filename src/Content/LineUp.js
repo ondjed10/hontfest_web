@@ -1,50 +1,46 @@
 import React, { useEffect, useState } from "react";
-import {TransitionGroup} from 'react-transition-group'
 export const LineUp = () => {
 
-    const bands = ['Sima Magušinová', 'LCH - Live + Ego', 'Timothy', 'XYZ', 'ABC']
+    const bands = [
+    '13:30 FS Agátik', 
+    '14:30 Martindom Worship',
+    '16:00 Towmeot',
+    '17:00 Sima Magušinová',
+    '18:30 LCH LIVE',
+    '19:30 EGO',
+    '20:30 Timothy' 
+    ]
 
-    const [index, setIndex] = useState(0)
-
-    useEffect(() => {
-
-        const interval = setInterval(() => {
-            setIndex((index + 1) % bands.length)
-        }, 3000)
-        return () => clearInterval(interval)
-
-    },[index])
-
-
+    const discusions = [
+        '16:30 Odsúdení na spásu',
+        '18:30 Povolanie manžel/ka'
+    ]
 
     return (
         <div>
-            {/* <div className="lineup">
-                <div key={index} className="band roll-out out">
-                    <span className="lineUpName">{bands[index]}</span>
-                </div>        
-            </div> */}
-            <div className="row">
+            <div className="rowProgram">
                 <div className="column">
                     <div className="sectionNameContainer">
-                        <h3 className="program">STAGE</h3>
+                        <h3 className="sectionName">STAGE</h3>
                     </div>
                     
                     {
                         bands.map(band => {
-                            return <p className="bands"> XX:YY  Insert band name</p>
+                            return <p className="bands">{band}</p>
                         })
                     }
                 </div>
                 <div className="column">
                     <div className="sectionNameContainer">
-                        <h3 className="program">Diskusný stan</h3>
+                        <h3 className="sectionName">Diskusný stan</h3>
                     </div> 
-                    {
-                        bands.map(band => {
-                            return <p className="bands"> XX:YY  Insert band name</p>
-                        })
-                    }                  
+                    <div className="disc">
+                        {
+                            discusions.map(disc => {
+                                return <p className="discs">{disc}</p>
+                            })
+                        }     
+                    </div>                 
                 </div>
             </div>
         </div>
