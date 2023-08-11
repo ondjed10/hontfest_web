@@ -15,7 +15,7 @@
   float: left;
   margin-left: 35px;
   height: 100%;
-  /* line-height: 2rem; */
+  line-height: 2rem;
 }
 
 /* .app-container {
@@ -54,9 +54,13 @@
   left: 50%;
 }
 
+h4 {
+  margin: 0;
+}
+
 .sectionNameContainer {
   margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   background-image: url('../src/images/obdlznik.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -85,7 +89,12 @@
   line-height: 10vw;
   font-weight: 700;
   font-size: 5vw;
-  letter-spacing: 0.3vw;  
+  letter-spacing: 0.3vw; 
+  background-image: url('../src/images/obdlznik.png');
+  background-repeat: repeat-x;
+  width: auto;
+  margin: 0;
+  margin-bottom: 60px; 
 }
 
 .countdown {
@@ -93,12 +102,12 @@
   background-position: center;
   color: #fff;
   height: fit-content;
-  margin: auto;
+  /* margin: auto; */
   border-radius: 30px;
   justify-content: center;
 }
 
-html, body {
+html, body{
   margin: 0;
   padding: 0;
 }
@@ -121,6 +130,18 @@ html, body {
   padding: 10;
   font-size: 1.7vw;
   color: #1D74FF;
+}
+
+.speakerText {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  font-size: 1.5vw;
+  color: #1D74FF;
+  width: 80%;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .lineup {
@@ -208,7 +229,6 @@ html, body {
   top: 0;
   z-index: 99;
   background-color: #fff;
-  /* padding: 10px 5px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -224,6 +244,14 @@ html, body {
 }
 
 .nav-item {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 1.5rem;
+  height: fit-content;
+  vertical-align: middle;
+}
+
+.nav-links .nav-item {
   display: inline-block;
   margin-left: 10px;
   font-size: 1.8rem;
@@ -410,67 +438,23 @@ hr {
 /* footer */
 .footer-box { 
   background: #1D74FF;
-  width: 100%;
-  height: 60px;
+  max-width: 100%;
+  height: auto;
 }
 
 .footer-img {
   padding-left: 10%;
   padding-right: 10%;
-  /* max-width: ; */
-  object-fit: contain;
+  max-width: 60%;
   max-height: 100%;
 }
 
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 100%;
-  margin: 0 auto;
+
+.speaker {
+  width: 80%;
+  height: auto;
 }
 
-.footer-column {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin-left: 60px;
-}
-
-.footer-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
-  grid-gap: 20px;
-
-  @media (max-width: 800px) {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
-
-}
-
-.footer-heading {
-  font-size: 24px;
-  color: #fff;
-  margin-bottom: 5px;
-  font-weight: 300;
-}
-
-/* @media (max-width: 868px) {
-  .nav {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    z-index: 2;
-    height: 70px;
-    min-height: 70px;
-    width: calc(100% - 1.5rem);
-    background-color: #fff;
-    padding: 0 1rem;
-    box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
-  }
-  
-} */
 
 @media (max-width: 800px) {
   .row {
@@ -492,6 +476,16 @@ hr {
     height: auto;
     margin-right: 0.25cm;
     justify-content: center;
+  }
+
+  .speaker {
+    width: 100%;
+    height: auto;
+  }
+
+  #qr {
+    width: 100%;
+    height: auto;
   }
 
   .columnMap {
@@ -522,6 +516,10 @@ hr {
     color: #1D74FF;
   }
 
+  .speakerText {
+    font-size: 4.5vw;
+  }
+
   .contactText {
     /* display: block; */
     width: 100%;
@@ -543,15 +541,8 @@ hr {
 }
 }
 
-
-
 .wrap {
   white-space: pre-line;
-}
-
-/* hamburger button css */
-.mobileNav {
-  display: none;
 }
 
 .container {
@@ -559,26 +550,16 @@ hr {
   cursor: pointer;
 }
 
-.bar {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-}
 
 
 @media (max-width: 800px) {
   
-  /* .navbar {
-    flex-direction: column;
-  } */
 
   .logoContainer {
-      width: 100%;
       height: auto;
+      width: 100%;
+      
   }
-
-
   .active {
     display: block;
   }
@@ -591,13 +572,6 @@ hr {
       margin: 0;
   }
 
-  .mobileNav {
-      display: block;
-      position: absolute;
-      top: 20px;
-      right: 5%;
-  }
-
   .nav-icons ul {
     display: inline;
   }
@@ -607,10 +581,6 @@ hr {
     align-self: center;
     float: none;
     padding: 0;
-  }
-
-  .mobileNav:hover .bar {
-      background-color: orange;
   }
 }
 
