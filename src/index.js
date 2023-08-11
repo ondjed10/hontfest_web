@@ -4,12 +4,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {  HashRouter } from 'react-router-dom';
 import { ScrollToTop } from './ScrollToTop'
+import { Analytics } from '@vercel/analytics/react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <HashRouter>
     <ScrollToTop/>
     <App />
+    <Analytics />
   </HashRouter>
 );
 
