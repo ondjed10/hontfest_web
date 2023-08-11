@@ -21,7 +21,7 @@ export const LineUp = () => {
             <div className="rowProgram">
                 <div className="column">
                     <div className="sectionNameContainer">
-                        <h3 className="sectionName">STAGE</h3>
+                        <h1 className="sectionName">STAGE</h1>
                     </div>
                     
                     {
@@ -32,7 +32,7 @@ export const LineUp = () => {
                 </div>
                 <div className="column">
                     <div className="sectionNameContainer">
-                        <h3 className="sectionName">Diskusný stan</h3>
+                        <h1 className="sectionName">Diskusný stan</h1>
                     </div> 
                     <div className="disc">
                         {
