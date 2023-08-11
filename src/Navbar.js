@@ -64,14 +64,6 @@ function Navbar(){
                 </div>
             </ul>
 
-            
-
-
-            {/* <div className="mobileNav" onClick={()=> toggleActive()}>
-                <div className="bar"></div>
-                <div className="bar"></div>
-                <div className="bar"></div>
-            </div> */}
         </nav>
     )
 }
