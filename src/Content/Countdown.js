@@ -53,7 +53,7 @@ export const Countdown = () => {
 
 
 
-        return `${days} dní | ${hours >= 10 ? hours : '0'+hours} ${hoursString} | ${minutes >= 10 ? minutes : '0'+minutes} ${minuteString} | ${seconds >= 10 ? seconds : '0'+seconds} ${secondsString}`
+        return `${days}d ${hours}h ${minutes}m ${seconds}s`
     }
 
     let [now, setNow] = useState(new Date())
