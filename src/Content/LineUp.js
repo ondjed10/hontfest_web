@@ -20,7 +20,7 @@ export const LineUp = () => {
         <div>
             <div className="rowProgram">
                 <div className="column">
-                    <div className="sectionNameContainer">
+                    <div className="sectionNameContainer" style={{backgroundSize: 60+'%'}}>
                         <h1 className="sectionName">STAGE</h1>
                     </div>
                     
@@ -31,8 +31,8 @@ export const LineUp = () => {
                     }
                 </div>
                 <div className="column">
-                    <div className="sectionNameContainer">
-                        <h1 className="sectionName">Diskusný stan</h1>
+                    <div className="sectionNameContainer" style={{backgroundSize: 60+'%'}}>
+                        <h1 className="sectionName" style={{whiteSpace: 'nowrap'}}>Diskusný stan</h1>
                     </div> 
                     <div className="disc">
                         {
