@@ -1,7 +1,7 @@
 import React from "react";
 import Map from "./Map";
 import {IoMdCall, IoMdMail, IoMdContact} from 'react-icons/io'
-
+import mapa from '../images/HF23Mapa.png'
 
 
 
@@ -16,13 +16,16 @@ function Contact(){
             </div>
             
             
-            <div className="row">
+            <div className="row" style={{alignItems: 'stretch'}}>
                 
                 <div className="columnMap">
                     <Map /> 
                 </div>
+                <div className="column">
+                    <img src={mapa} alt="mapa"></img>
+                </div>
             </div>
-            <div className="row">
+            <div className="row" >
                         <p className="contactText">
                                 <IoMdContact/>  Dominik Belica
                         </p>

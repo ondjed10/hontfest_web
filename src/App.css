@@ -296,6 +296,11 @@ html, body{
   float: left;
 }
 
+.column img {
+  width: 100%;
+  height: auto;
+}
+
 .columnDisc {
   flex-basis: 33%;
 }
@@ -320,8 +325,8 @@ html, body{
 }
 
 .columnMap {
-  width: 100%;
-  height: 450px;
+  width: 45%;
+  height: auto;
   float: left;
 }
 
