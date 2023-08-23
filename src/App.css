@@ -142,6 +142,8 @@ html, body{
   text-align: justify;
   margin-left: auto;
   margin-right: auto;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .lineup {
@@ -292,6 +294,18 @@ html, body{
 .column {
   width: 50%;
   float: left;
+}
+
+.columnDisc {
+  flex-basis: 33%;
+}
+
+.discLeft {
+  float: left;
+}
+
+.discRight {
+  float: right;
 }
 
 .column2 {

@@ -12,6 +12,7 @@ export const LineUp = () => {
     ]
 
     const discusions = [
+        '14:30 Spýtaj sa o Cirkvi',
         '16:30 Odsúdení na spásu',
         '18:30 Povolanie manžel/ka'
     ]
