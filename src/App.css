@@ -547,7 +547,7 @@ hr {
     color: #1D74FF;
   }
 
-  .speakerText {
+  .speakerText, h4, .bands, .discs{
     font-size: 4.5vw;
   }
 
