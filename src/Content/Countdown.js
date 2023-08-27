@@ -57,7 +57,7 @@ export const Countdown = () => {
     }
 
     let [now, setNow] = useState(new Date())
-    const [dayD, setDayD] = useState(new Date(2023, 7, 26, 15, 0, 0))
+    const [dayD, setDayD] = useState(new Date(2024, 7, 24, 13, 0, 0))
     const [countdown, setCountDown] = useState(countTimeLeft(dayD, now))
 
     
